@@ -5,10 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Shared\Components\ApplicationDetail\Default.cshtml" />
     <None Remove="Views\Shared\Components\ApplicationsListing\Default.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Views\Shared\Components\ApplicationDetail\Default.cshtml" />
     <Content Include="Views\Shared\Components\ApplicationsListing\Default.cshtml" />
   </ItemGroup>
 

@@ -8,6 +8,7 @@ namespace Mvp.Feature.Reviews.Rendering.Extensions
         public static RenderingEngineOptions AddFeatureReviews(this RenderingEngineOptions options)
         {
             options.AddViewComponent("ApplicationsListing", "ApplicationsListing");
+            options.AddViewComponent("ApplicationDetail", "ApplicationDetail");
             return options;
         }
     }
