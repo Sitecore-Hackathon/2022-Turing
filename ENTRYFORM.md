@@ -52,6 +52,8 @@ The admin can use the open beside each each submission to enter the details page
 
 Following is a screenshot from the application/submission detail page showing the content in addition to the Review admin panel:
 
+![Deal With It](docs/images/Submission-Details.png?raw=true "Submission Details")
+
 ![Deal With It](docs/images/Assign-Reviewers.png?raw=true "Assign Reviewers")
 
 
