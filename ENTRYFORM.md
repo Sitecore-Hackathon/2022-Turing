@@ -1,6 +1,6 @@
 
 ## Team name
-⟹ Turing
+⟹ **TEAM Turing**
 
 ## Category
 ⟹ Best addition to the Sitecore MVP site
