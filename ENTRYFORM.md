@@ -18,7 +18,9 @@ This new feature [Reviews] will offer the following:
 ## Video link
 ⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
 
-⟹ [Replace this Video link](#video-link)
+⟹ ([Watch the video here](https://www.youtube.com/watch?v=YFYfFsJJhms))
+
+[![Watch the video](docs/images/PlayVideo.jpg)](https://www.youtube.com/watch?v=YFYfFsJJhms)
 
 
 ## Installation instructions
