@@ -9,7 +9,7 @@
 ⟹ The addition we're offering here is **MVP Review Portal** in which we can have the whole reviewing process. 
 
 This new feature [Reviews] will offer the following:
-- **Submissions Listing**: Which is a page teh display all submission (possible with facets like Country, Category...etc), this page will be secured and accessable via site admin. 
+- **Submissions Listing**: Which is a page that display all submission (possible with facets like Country, Category...etc), this page will be secured and accessable via site admin. 
 - **Submission Detail**: Which is a page that can be accessed through the above listing page, in which we can see the detailed of the submission (MVP application Submission) like personal information, Objectives and Motications, community profiles, Online and Offline Contributions in addition to the following reviewing panel
 - **Reviewing Panel**: Its a section in the submission detail in which the site admin can assign reviewers to an application/submission. we have three types of reviewers (MVP reviewer, Corporate Reviewer and Regional Reviewer)
 - **Review Status/Feedback**: In this section the reviewer can add his/her feedback, which includes a status (Yes, No, Maybe) in addition to the reason for choosing the status. 
