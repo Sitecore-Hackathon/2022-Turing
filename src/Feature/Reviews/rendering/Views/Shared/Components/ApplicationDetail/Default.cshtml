@@ -2,7 +2,7 @@
 @using Mvp.Feature.Reviews.Rendering.Models;
 @model Mvp.Feature.Reviews.Rendering.Models.Application
 
-
+<link rel="stylesheet" href="/style/global.css" />
 
 @if (Model != null)
 {
@@ -20,8 +20,68 @@
         <section class="mvp-review page-overview-panel">
             <div class="container">
                 <div class="col-md-12">
-                    <h2>@Model.firstName +" "+ @Model.lastName+ " Review</h2>
+
+                    <h2>MVP Application Review</h2>
                     <div class="panel panel-default">
+
+                        <div class="panel-body readonly">
+                            <h3>Personal Information</h3>
+
+                            <dl class="row">
+                                <dt class="col-sm-3">First Name:</dt>
+                                <dd class="col-sm-9">Hamzeh</dd>
+
+                                <dt class="col-sm-3">Last Name:</dt>
+                                <dd class="col-sm-9">Aledous</dd>
+                                <dt class="col-sm-3">Preferred Name:</dt>
+                                <dd class="col-sm-9">Aledous</dd>
+
+                                <dt class="col-sm-3">CompanyName:</dt>
+                                <dd class="col-sm-9">Americaneagle.com</dd>
+                            </dl>
+                        </div>
+
+                        <div class="panel-body readonly">
+                            <h3>Objectives and Motivation</h3>
+
+                            <dl class="row">
+                                <dt class="col-sm-3">Eligibility:</dt>
+                                <dd class="col-sm-9">Hamzeh</dd>
+
+                                <dt class="col-sm-3">Objectives:</dt>
+
+                            </dl>
+                        </div>
+
+                        <div class="panel-body readonly">
+                            <h3>Community profiles</h3>
+
+                            <dl class="row">
+                                <dt class="col-sm-3">Blog:</dt>
+                                <dd class="col-sm-9">https://sitecorebox.blogspot.com/</dd>
+
+                                <dt class="col-sm-3">SitecoreCommunity:</dt>
+                                <dd class="col-sm-9">Aledous</dd>
+                                <dt class="col-sm-3">Twitter:</dt>
+                                <dd class="col-sm-9">https://twitter.com/HamzahAledous</dd>
+
+                                <dt class="col-sm-3">GitHub:</dt>
+                                <dd class="col-sm-9">https://github.com/Sitecore-Hackathon/2022-Turing</dd>
+                            </dl>
+                        </div>
+
+                        <div class="panel-body readonly">
+                            <h3>Notable Current Year Contributions</h3>
+
+                            <dl class="row">
+                                <dt class="col-sm-3">Online Contributions:</dt>
+                                <dd class="col-sm-9">Twitter, linkedin</dd>
+
+                                <dt class="col-sm-3">Offline Contributions:</dt>
+                                <dd class="col-sm-9">.....</dd>
+
+                            </dl>
+                        </div>
                         <div class="panel-body readonly">
                             <h3>Section 1</h3>
                             <p>
@@ -44,6 +104,25 @@
                                 turpis ex, scelerisque ac ex ac, cursus vestibulum elit. Cras finibus dui a efficitur
                                 mattis. Pellentesque porta imperdiet tortor, eget facilisis risus sodales nec.
                             </p>
+                        </div>
+
+                        <div class="form-group">
+                            <h2>Reviewers</h2>
+                            <label class="block" for="comment">Fill the reviewers (email address)</label>
+                            <div class="group">
+                                <label for="comment">Current MVP</label>
+                                <input type="text" placeholder="Enter email address" class="form-control"></input>
+                            </div>
+                            <div class="group">
+                                <label for="comment">Corporate Teams</label>
+                                <input type="text" placeholder="Enter email address" class="form-control"></input>
+                            </div>
+                            <div class="group">
+                                <label for="comment">Regional Teams</label>
+                                <input type="text" placeholder="Enter email address" class="form-control"></input>
+                            </div>
+                            <button type="button" class="btn btn-default">Sent</button>
+                            <button type="button" class="btn btn-secondary">Cancel </button>
                         </div>
                         <div class="form-group">
                             <h2>MVP Feedback</h2>

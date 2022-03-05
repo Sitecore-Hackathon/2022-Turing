@@ -2,10 +2,11 @@
 @using Mvp.Feature.Reviews.Rendering.Models;
 @model Mvp.Feature.Reviews.Rendering.Models.SubmissionsSearchResults
 
-
+    <link rel="stylesheet" href="/style/global.css" />
 
 @if (Model != null)
 {
+
     <section class="component hero  bg-white small  no-overhang" data-component-name="Hero Banner">
         <div class="container">
             <div class="row">
@@ -16,29 +17,74 @@
             </div>
         </div>
     </section>
-    <section class="mvp-review component page-overview-panel">
+    <section class="mvp-review component ">
         <div class="container">
             <div class="col-md-12">
                 <h2>MVP Applicant Review</h2>
-                <div class="panel panel-default">
-                    <ul>
-                        @foreach (var app in Model.Application)
-                        {
-                            if (app.status == Status.Active)
-                            {
-                                <li> <a class="Applicant" ref="#">@app.firstName+ " "+ @app.lastName   <span class="label label-warning">Review</span></a></li>
-                            }
-                            else
-                            {
-                                <li> <a class="Applicant complete" ref="#">@app.firstName+ " "+ @app.lastName <span class="label label-success">Complete</span></a></li>
-                            }
-                        }
-
-
-                    </ul>
-
-                </div>
+                <table class="table table-sm table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Status</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Larry</td>
+                            <td> the Bird</td>
+                            <td>twitter</td>
+                            <td class="text-success">Reviewed</td>
+                            <td>                      <div class="form-group">   <button type="button" class="btn btn-default">Open</button> </div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>fat</td>
+                            <td class="text-danger">Active</td>
+                            <td>                      <div class="form-group">   <button type="button" class="btn btn-default">Open</button> </div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td> the Bird</td>
+                            <td>twitter</td>
+                            <td class="text-success">Reviewed</td>
+                            <td>                      <div class="form-group">   <button type="button" class="btn btn-default">Open</button> </div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Larry</td>
+                            <td> the Bird</td>
+                            <td>twitter</td>
+                            <td class="text-success">Reviewed</td>
+                            <td>                      <div class="form-group">   <button type="button" class="btn btn-default">Open</button> </div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>twitter</td>
+                            <td class="text-danger">Active</td>
+                            <td>                      <div class="form-group">   <button type="button" class="btn btn-default">Open</button> </div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Larry</td>
+                            <td> the Bird</td>
+                            <td>twitter</td>
+                            <td class="text-success">Reviewed</td>
+                            <td>                      <div class="form-group">   <button type="button" class="btn btn-default">Open</button> </div></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
+
 }
