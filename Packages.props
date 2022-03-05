@@ -40,6 +40,7 @@
         <PackageReference Update="Microsoft.AspNetCore.Session" Version="2.2.0" />
         <PackageReference Update="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.14" />
         <PackageReference Update="Microsoft.Extensions.Http" Version="3.1.1" />
+        <PackageReference Update="Microsoft.Extensions.Caching.Memory" Version="3.1.1" />
         <PackageReference Update="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
     </ItemGroup>
 </Project>

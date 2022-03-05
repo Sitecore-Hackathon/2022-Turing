@@ -1,11 +1,31 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Shared\Components\ApplicationsListing\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Shared\Components\ApplicationsListing\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\shared\Mvp.Feature.Reviews.Shared.csproj" />
   </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="GraphQL.Client" />
+        <PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" />
+        <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+        <PackageReference Include="Sitecore.LayoutService.Client" />
+        <PackageReference Include="Sitecore.AspNet.RenderingEngine" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="GraphQLQueries\" />
+    </ItemGroup>
 
 </Project>

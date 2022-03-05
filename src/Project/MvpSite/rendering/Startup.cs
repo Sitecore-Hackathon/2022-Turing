@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using Mvp.Feature.BasicContent.Extensions;
 using Mvp.Feature.Forms.Extensions;
 using Mvp.Feature.Navigation.Extensions;
+using Mvp.Feature.Reviews.Rendering.Extensions;
 using Mvp.Feature.Social.Extensions;
 using Mvp.Foundation.People.Extensions;
 using Mvp.Foundation.User.Extensions;
@@ -89,6 +90,7 @@ namespace Mvp.Project.MvpSite.Rendering
             .AddFoundationPeople()
             .AddFeatureSocial()
             .AddFeatureForms()
+            .AddFeatureReviews()
             .AddDefaultPartialView("_ComponentNotFound");
         })
         // Includes forwarding of Scheme as X-Forwarded-Proto to the Layout Service, so that
@@ -100,6 +102,7 @@ namespace Mvp.Project.MvpSite.Rendering
         .WithExperienceEditor();
 
       services.AddFoundationPeople();
+      services.AddFeatureReviews();
       // Enable support for robot detection.
       //services.AddSitecoreVisitorIdentification(options =>
       //{
