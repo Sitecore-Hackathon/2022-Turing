@@ -40,17 +40,17 @@ This new feature [Reviews] will offer the following:
 ⟹ Provide documentation about your module, how do the users use your module, where are things located, what do the icons mean, are there any secret shortcuts etc.
 
 The feature has the following user types:
-- Applications/Submissions admin: responsible for assigning reviewers to applications/submissions
-- Applications/Submissions Reviewer: responsible for reviewing applications/submissions and provide feedback
+- **Applications/Submissions admin**: responsible for assigning reviewers to applications/submissions
+- **Applications/Submissions Reviewer**: responsible for reviewing applications/submissions and provide feedback
 
 Once the admin is logged in to the system, admin can use the `/Submissions` page to access a listing page of all submissions, this page is **utilizing GraphQL endpoint** for seaching and retrecing applications/submissions. following is a screenshot for this page: 
 
 ![Hackathon Logo](docs/images/Submissions-Listing.png?raw=true "Submissions Listing")
 
 The admin can use the open beside each each submission to enter the details page, in which the admin can use the Review Panel to assign reviewers,currently the system has three type of reviewers:
-- MVP reviewer 
-- Corporate Reviewer 
-- Regional Reviewer 
+- **MVP reviewer** 
+- **Corporate Reviewer** 
+- **Regional Reviewer** 
 
 Following is a screenshot from the application/submission detail page showing the content in addition to the Review admin panel:
 
