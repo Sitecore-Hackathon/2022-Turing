@@ -1,0 +1,67 @@
+@using Mvp.Feature.Reviews.Rendering.Extensions;
+@using Mvp.Feature.Reviews.Rendering.Models;
+@model Mvp.Feature.Reviews.Rendering.Models.Application
+
+
+
+@if (Model != null)
+{
+    <form action="/SubmitReview" method="post">
+        <section class="component hero  bg-white small  no-overhang" data-component-name="Hero Banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 side-content">
+                        <p class="top">2023 MVP</p>
+                        <h1 class="static">Applicant Review</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mvp-review page-overview-panel">
+            <div class="container">
+                <div class="col-md-12">
+                    <h2>@Model.firstName +" "+ @Model.lastName+ " Review</h2>
+                    <div class="panel panel-default">
+                        <div class="panel-body readonly">
+                            <h3>Section 1</h3>
+                            <p>
+                                Praesent elementum imperdiet elementum. Etiam id commodo neque. Pellentesque id magna
+                                turpis. Suspendisse sodales eget magna vel rutrum. Integer aliquet, magna eget tempor
+                                egestas, eros urna finibus sem, eget venenatis enim eros id felis. Maecenas vulputate, justo
+                                in mollis congue, augue dui blandit diam, vel tempor diam nisi vel urna. Pellentesque
+                                habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
+                                turpis ex, scelerisque ac ex ac, cursus vestibulum elit. Cras finibus dui a efficitur
+                                mattis. Pellentesque porta imperdiet tortor, eget facilisis risus sodales nec.
+                            </p>
+
+                            <h3>Section 2</h3>
+                            <p>
+                                Praesent elementum imperdiet elementum. Etiam id commodo neque. Pellentesque id magna
+                                turpis. Suspendisse sodales eget magna vel rutrum. Integer aliquet, magna eget tempor
+                                egestas, eros urna finibus sem, eget venenatis enim eros id felis. Maecenas vulputate, justo
+                                in mollis congue, augue dui blandit diam, vel tempor diam nisi vel urna. Pellentesque
+                                habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi
+                                turpis ex, scelerisque ac ex ac, cursus vestibulum elit. Cras finibus dui a efficitur
+                                mattis. Pellentesque porta imperdiet tortor, eget facilisis risus sodales nec.
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <h2>MVP Feedback</h2>
+                            <label class="block" for="comment">Recommend this canidate for MVP?</label>
+                            <label class="radio-inline"><input type="radio" name="optradio" checked>Yes</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Maybe</label>
+                            <div class="group">
+                                <label for="comment">Comments:</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-default">Submit</button>
+                            <button type="button" class="btn btn-secondary">Cancel </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+}

@@ -4,5 +4,41 @@
 
 
 
+@if (Model != null)
+{
+    <section class="component hero  bg-white small  no-overhang" data-component-name="Hero Banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 side-content">
+                    <p class="top">2023 MVP</p>
+                    <h1 class="static">Applicant Review</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mvp-review component page-overview-panel">
+        <div class="container">
+            <div class="col-md-12">
+                <h2>MVP Applicant Review</h2>
+                <div class="panel panel-default">
+                    <ul>
+                        @foreach (var app in Model.Application)
+                        {
+                            if (app.status == Status.Active)
+                            {
+                                <li> <a class="Applicant" ref="#">@app.firstName+ " "+ @app.lastName   <span class="label label-warning">Review</span></a></li>
+                            }
+                            else
+                            {
+                                <li> <a class="Applicant complete" ref="#">@app.firstName+ " "+ @app.lastName <span class="label label-success">Complete</span></a></li>
+                            }
+                        }
 
-<b>APPLICATIONS LISTING</b>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+}
